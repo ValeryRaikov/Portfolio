@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Valery raikov</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+</head>
+
+<body class="overflox-x-hidden leading-8 font-Outfit dark:bg-darkTheme dark:text-white">
+    <div class="fixed top-0 rigth-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-10 bg-transparent transition-colors duration-500">
+        <p class="text-3xl font-bold text-gray-700 cursor-pointer mr-14 dark:hidden">Valery.</p>
+        <p class="text-3xl font-bold text-gray-300 cursor-pointer mr-14 hidden dark:block">Valery.</p>
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#work">My work</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button id="switch-btn">
+                <img src="./images/moon_icon.png" alt="" class="w-6 dark:hidden">
+                <img src="./images/sun_icon.png" alt="" class="w-6 hidden dark:block">
+            </button>
+            <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50">
+                Contact 
+                <img src="./images/arrow-icon.png" alt="" class="w-3 dark:hidden">
+                <img src="./images/arrow-icon-dark.png" alt="" class="w-3 hidden dark:block">
+            </a>
+            <button id="menu-btn" class="block md:hidden ml-3">
+                <img src="./images/menu-black.png" alt="" class="w-6 dark:hidden">
+                <img src="./images/menu-white.png" alt="" class="w-6 hidden dark:block">
+            </button>
+        </div>
+        <ul id="side-menu" 
+            class="flex md:hidden flex-col gap-4 px-10 py-20 fixed -right-64 top-0 bottom-0 w-64 z-10 h-full bg-rose-50 transition duration-500 font-Ovo dark:bg-[#2a004a] dark:text-white"
+        >
+            <div id="menu-div" class="absolute right-6 top-6">
+                <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden">
+                <img src="./images/close-white.png" alt="" class="w-5 cursor-pointer hidden dark:block">
+            </div>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#work">My work</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./images/profile-img.jpg" alt="" class="rounded-full w-32 border border-gray-700 p-[1.5px] dark:border-white">
+        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">Hi! I'm Valery Raikov <img src="./images/hand-icon.png" alt="" class="w-6"></h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-66px font-Ovo">BCSE university student based in Sofia</h1>
+        <p class="max-w-2xl mx-auto font-Ovo">
+            I am a BCSE university student from Sofia, Bulgaria currently studying computer and software engineering
+            at Technical University of Sofia as well as Software University.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent">
+                Contact me <img src="./images/right-arrow-white.png" alt="" class="w-4">
+            </a>
+            <a href="" download class="px-10 py-3 border rounded-full border-gray-500 bg-white flex items-center gap-2 dark:text-black">
+                My resume <img src="./images/download-icon.png" alt="" class="w-4">
+            </a>
+        </div>
+    </div>
+
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+        <h2 class="text-center text-5xl font-Ovo">About me</h2>
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img src="./images/user-image.jpg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none border border-gray-700 p-[1.5px] dark:border-white">
+                <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149, 0, 162, 0.15)] flex items-center justify-center">
+                    <img src="./images/circular-text.png" alt="" class="w-full animate-spinSlow">
+                    <img src="./images/dev-icon.png" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                </div>
+            </div>
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl font-Ovo">
+                    I'm a BCSE student at TU-Sofia, where I'm diving deep into the world of computer science and engineering. My coursework 
+                    covers everything from programming and algorithms to software development. It's a mix of theory and hands-on projects, 
+                    which I really enjoy because it helps me see how the concepts apply in real life. I'm particularly interested in areas 
+                    like software engineering and I'm always excited about finding new ways to solve problems with technology.
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl text-center p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <div class="flex items-center justify-center gap-4">
+                            <img src="./images/code-icon.png" alt="" class="w-7 dark:hidden">
+                            <img src="./images/code-icon-dark.png" alt="" class="w-7 hidden dark:block">
+                            <h3 class="my-4 font-semibold text-gray-700 text-lg dark:text-white">Languages</h3>
+                        </div>
+                        <p class="text-gray-600 text-md dark:text-white/80">HTML5, CSS, JavaScript, React Js, Python, Django, Java, C, PostgreSQL, MySQL, MongoDB</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl text-center p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <div class="flex items-center justify-center gap-4">
+                            <img src="./images/edu-icon.png" alt="" class="w-7 dark:hidden">
+                            <img src="./images/edu-icon-dark.png" alt="" class="w-7 hidden dark:block">
+                            <h3 class="my-4 font-semibold text-gray-700 text-lg dark:text-white">Education</h3>
+                        </div>
+                        <p class="text-gray-600 text-md dark:text-white/80">1. French Language School "Alphonse de lamartine"<br>2. BCSE - Technical University - Sofia<br>3. Software University</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl text-center p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <div class="flex items-center justify-center gap-4">
+                            <img src="./images/project-icon.png" alt="" class="w-7 dark:hidden">
+                            <img src="./images/project-icon-dark.png" alt="" class="w-7 hidden dark:block">
+                            <h3 class="my-4 font-semibold text-gray-700 text-lg dark:text-white">Projects</h3>
+                        </div>
+                        <p class="text-gray-600 text-md mb-3 dark:text-white/80">Various software projects on different languages</p>
+                        <a class="text-gray-600 text-md font-semibold hover:text-purple-800 dark:text-white/80" href="https://github.com/ValeryRaikov/" target="_blank">Link to github</a>
+                    </li>
+                </ul>
+                <h4 class="my-3 text-gray-700 font-semibold font-Ovo dark:text-white/80">Tools I use:</h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-darkHover">
+                        <img src="./images/vscode.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-darkHover">
+                        <img src="./images/pycharm.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-darkHover">
+                        <img src="./images/intellij.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-darkHover">
+                        <img src="./images/docker.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-darkHover">
+                        <img src="./images/firebase.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-darkHover">
+                        <img src="./images/mongodb.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-darkHover">
+                        <img src="./images/windows.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-darkHover">
+                        <img src="./images/git.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-darkHover">
+                        <img src="./images/cmd.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">What I offer</h4>
+        <h2 class="text-center text-5xl font-Ovo">My Profile</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+            I am a BCSE student at TU university in Sofia, Bulgaria, with a strong foundation in various technologies. I hold multiple 
+            SoftUni certificates from a range of courses, maintain an excellent academic record, and actively manage a well-curated GitHub account.
+            I am eager to take on new job opportunities that challenge me.
+        </p>
+        <div class="grid grid-cols-auto gap-6 my-10">
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <img src="./images/frontend.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Frontend</h3>
+                <p class="text-md text-gray-600 leading-5 dark:text-white/80">Projects built with HTML5, CSS, JavaScript and React Js</p>
+                <p class="hidden mt-5 text-sm text-gray-600 leading-5 dark:text-white/80">Frontend projects involving DOM manipulation, HTML5, CSS, and dynamic content management using JavaScript or React JSX.</p>
+                <a href="#" class="read-more-link flex items-center gap-2 text-sm mt-5">
+                    <span>Read more</span>  
+                    <img src="./images/right-arrow.png" alt="" class="w-4 dark:hidden">
+                    <img src="./images/right-arrow-dark.png" alt="" class="w-4 hidden dark:block">
+                </a>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <img src="./images/backend.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Backend</h3>
+                <p class="text-md text-gray-600 leading-5 dark:text-white/80">Projects built with Python and Java OOP, Node Js</p>
+                <p class="hidden mt-5 text-sm text-gray-600 leading-5 dark:text-white/80">Backend projects demonstrating expertise in functional and object-oriented programming using Python, Java, and Node.js</p>
+                <a href="#" class="read-more-link flex items-center gap-2 text-sm mt-5">
+                    <span>Read more</span> 
+                    <img src="./images/right-arrow.png" alt="" class="w-4 dark:hidden">
+                    <img src="./images/right-arrow-dark.png" alt="" class="w-4 hidden dark:block">
+                </a>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <img src="./images/fullstack.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Fullstack</h3>
+                <p class="text-md text-gray-600 leading-5 dark:text-white/80">Applications built with Django and MERN stack</p>
+                <p class="hidden mt-5 text-sm text-gray-600 leading-5 dark:text-white/80">Full-stack web applications with client-side features including authentication, CRUD operations, and API integration.</p>
+                <a href="#" class="read-more-link flex items-center gap-2 text-sm mt-5">
+                    <span>Read more</span> 
+                    <img src="./images/right-arrow.png" alt="" class="w-4 dark:hidden">
+                    <img src="./images/right-arrow-dark.png" alt="" class="w-4 hidden dark:block">
+                </a>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <img src="./images/sql.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">SQL</h3>
+                <p class="text-md text-gray-600 leading-5 dark:text-white/80">DBMS built with Postgres, MySQL and MongoDB</p>
+                <p class="hidden mt-5 text-sm text-gray-600 leading-5 dark:text-white/80">Database projects focused on DBMS, including relational models and query operations for data manipulation.</p>
+                <a href="#" class="read-more-link flex items-center gap-2 text-sm mt-5">
+                    <span>Read more</span> 
+                    <img src="./images/right-arrow.png" alt="" class="w-4 dark:hidden">
+                    <img src="./images/right-arrow-dark.png" alt="" class="w-4 hidden dark:block">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
+        <h2 class="text-center text-5xl font-Ovo">My latest works</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+            
+        </p>
+        <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
+            <div class="aspect-square bg-[url('./images/react-project.avif')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white border border-black w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 px-5 py-3 flex items-center justify-between opacity-0 translate-y-0 group-hover:opacity-100 group-hover:translate-y-[-5px] duration-500">
+                    <div>
+                        <h2 class="font-semibold">React Js projects</h2>
+                        <p class="text-sm text-gray-700">Full stack applications</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="./images/send-icon.png" alt="" class="w-5">
+                    </div>
+                </div>
+            </div>
+            <div class="aspect-square bg-[url('./images/js-project.webp')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white border border-black w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 px-5 py-3 flex items-center justify-between opacity-0 translate-y-0 group-hover:opacity-100 group-hover:translate-y-[-5px] duration-500">
+                    <div>
+                        <h2 class="font-semibold">Pure JS projects</h2>
+                        <p class="text-sm text-gray-700">Frontend applications</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="./images/send-icon.png" alt="" class="w-5">
+                    </div>
+                </div>
+            </div>
+            <div class="aspect-square bg-[url('./images/django-project.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white border border-black w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 px-5 py-3 flex items-center justify-between opacity-0 translate-y-0 group-hover:opacity-100 group-hover:translate-y-[-5px] duration-500">
+                    <div>
+                        <h2 class="font-semibold">Django projects</h2>
+                        <p class="text-sm text-gray-700">Backend applications</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="./images/send-icon.png" alt="" class="w-5">
+                    </div>
+                </div>
+            </div>
+            <div class="aspect-square bg-[url('./images/sql-project.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white border border-black w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 px-5 py-3 flex items-center justify-between opacity-0 translate-y-0 group-hover:opacity-100 group-hover:translate-y-[-5px] duration-500">
+                    <div>
+                        <h2 class="font-semibold">Database projects</h2>
+                        <p class="text-sm text-gray-700">SQL scripts</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="./images/send-icon.png" alt="" class="w-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/ValeryRaikov" target="_blank" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full px-10 py-3 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover">
+            Show more
+            <img src="./images/right-arrow-bold.png" alt="" class="w-4 dark:hidden">
+            <img src="./images/right-arrow-bold-dark.png" alt="" class="w-4 hidden dark:block">
+        </a>
+    </div>
+
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
+        <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+            I'd love to hear from you! If you are interested in my profile or have any questions, comments or feedback, please do not hesitate
+            and use the form bellow to get in touch with me.
+        </p>
+        <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+            <input type="hidden" name="access_key" value="9b52af32-5992-4b50-89b1-3de8f56fa4e2">
+            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+                <input type="text" name="name" placeholder="Enter your name" required class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
+                <input type="email" name="email" placeholder="Enter your email" required class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
+            </div>
+            <textarea rows="6" name="message" placeholder="Enter your message" required class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"></textarea>
+            <button type="submit" class="px-8 py-3 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">
+                Submit now <img src="./images/right-arrow-white.png" alt="" class="w-4">
+            </button>
+        </form>
+    </div>
+
+    <div class="mt-20">
+        <div class="text-center">
+            <p class="text-5xl font-bold text-gray-700 cursor-pointer mb-8 dark:hidden">Valery.</p>
+            <p class="text-5xl font-bold text-gray-300 cursor-pointer mb-8 hidden dark:block">Valery.</p>
+            <div class="w-max flex items-center gap-2 mx-auto mb-4">
+                <img src="./images/mail_icon.png" alt="" class="w-8 dark:hidden">
+                <img src="./images/mail_icon_dark.png" alt="" class="w-8 hidden dark:block">
+                <p class="text-xl">valeryraikov@gmail.com / valeryraikov2@gmail.com</p>
+            </div>
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <img src="./images/phone-icon.png" alt="" class="w-8 dark:hidden">
+                <img src="./images/phone-icon-dark.jpg" alt="" class="w-8 hidden dark:block">
+                <p class="text-xl">+359 887 111 899</p>
+            </div>
+        </div>
+        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+            <p>&copy; 2024 Valery Raikov. All rights reserved</p>
+            <ul class="flex items-center justify-center gap-10 mt-4 sm:mt-0">
+                <li><a href="https://www.facebook.com/profile.php?id=100008440088832&locale=bg_BG" target="_blank" class="font-semibold hover:text-blue-700 duration-500">Facebook</a></li>
+                <li><a href="https://www.instagram.com/val_raikov/" target="_blank" class="font-semibold hover:text-red-700 duration-500">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/valery-raikov-6b5326253/" target="_blank" class="font-semibold hover:text-blue-700 duration-500">LinkedIn</a></li>
+                <li><a href="https://github.com/ValeryRaikov" target="_blank" class="font-semibold hover:text-purple-700 duration-500">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
